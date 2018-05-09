@@ -13,6 +13,8 @@ header{
   height: 759px;
   overflow: hidden;
   font-family: 'Proxima Nova Bl';
+}
+header, .logotypes, .offer{
   padding-left: 120px;
   padding-right: 120px;
 }
@@ -82,7 +84,6 @@ header h3{
   display: inline-block;
   width: 235px;
   height: 57px;
-  margin-left: 30px;
   padding-left: 43px;
   background-color: #27d678;
   color: #fff;
@@ -93,6 +94,9 @@ header h3{
   font-size: 22px;
   font-family: 'Proxima Nova Rg';
   font-weight: bold;
+}
+.top-btn{
+  margin-left: 30px;
 }
 .go-btn-rocket{
   position: absolute;
@@ -136,8 +140,6 @@ header h3{
   opacity: 0.2;
 }
 .logotypes{
-  padding-left: 120px;
-  padding-right: 120px;
   padding-top: 86px;
   font-family: 'Proxima Nova Bl';
 }
@@ -207,4 +209,50 @@ header h3{
   font-family: 'Proxima Nova Rg';
   font-size: 14px;
   letter-spacing: -0.5px;
+}
+.offer h1{
+  font-family: 'Proxima Nova Bl';
+  font-size: 22px;
+  margin-top: -30px;
+}
+.offer h2{
+  font-family: 'Proxima Nova Rg';
+  font-size: 22px;
+  color: #7c7c7c;
+}
+.offer p{
+  font-family: 'Proxima Nova Rg';
+  font-size: 14px;
+  color: #7c7c7c;
+}
+#audit, #logo_style, #design, #structure, #develop{
+  height: 42px;
+  line-height: 42px;
+  padding-left: 20px;
+  color: #fff;
+  border-radius: 28px;
+  box-shadow: 0 4px 0px 0 rgb(85%, 85%, 85%, 0.83);
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  font-size: 14px;
+}
+#audit{
+  width: 159px;
+  background-color: #337adb;
+}
+#logo_style{
+  width: 273px;
+  background-color: #33b5db;
+}
+#design{
+  width: 131px;
+  background-color: #9633db;
+}
+#structure{
+  width: 188px;
+  background-color: #db33d5;
+}
+#develop{
+  width: 279px;
+  background-color: #db337a;
 }
