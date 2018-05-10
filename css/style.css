@@ -276,3 +276,8 @@ header h3{
   float: right;
   margin-top: 6px;
 }
+.offer-part{
+  box-shadow: 1px 1px 20px 0 #f2f2f2, -1px -1px 20px 0 #f2f2f2, 1px -1px 20px 0 #f2f2f2, -1px 1px 20px 0 #f2f2f2;
+  padding: 50px 30px 50px 25px;
+  background-color: #fff;
+}
