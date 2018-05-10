@@ -225,34 +225,54 @@ header h3{
   font-size: 14px;
   color: #7c7c7c;
 }
-#audit, #logo_style, #design, #structure, #develop{
+.audit, .logo_style, .design, .structure, .develop{
   height: 42px;
   line-height: 42px;
   padding-left: 20px;
+  padding-right: 20px;
   color: #fff;
   border-radius: 28px;
   box-shadow: 0 4px 0px 0 rgb(85%, 85%, 85%, 0.83);
   font-family: 'Proxima Nova Rg';
   font-weight: bold;
   font-size: 14px;
+  display: inline-block;
 }
-#audit{
+.audit, .logo_style, .design, .structure, .develop{
+  cursor: pointer;
+}
+.audit{
   width: 159px;
   background-color: #337adb;
 }
-#logo_style{
+.logo_style{
   width: 273px;
   background-color: #33b5db;
 }
-#design{
+.design{
   width: 131px;
   background-color: #9633db;
 }
-#structure{
+.structure{
   width: 188px;
   background-color: #db33d5;
 }
-#develop{
+.develop{
   width: 279px;
   background-color: #db337a;
+}
+#audit, #logo_style, #design, #structure, #develop{
+  margin: 10px 10px 10px 0;
+  display: none;
+}
+#audit, #logo_style, #design, #structure, #develop:hover{
+  cursor: pointer;
+}
+.img{
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  line-height: 42px;
+  float: right;
+  margin-top: 6px;
 }

@@ -106,6 +106,11 @@
             <p>Ваши пожелания – фундамент нашей работы. Также мы изучаем покупательскую аудиторию. Формируем дизайн текущего сайта или нового. Мы работаем на ваших клиентов, готовых платить. Дизайн логотипа, названия, фирменный стиль, цветовая гамма сайта – это дорога, ведущая к вашему успеху. В работе учитываются психологические и эмоциональные факторы людей, ищущих вас в сети.</p>
             <div id="offerchoice">
               <h2>Вы выбрали:</h2>
+              <div class="audit" id="audit" onclick=remove("audit")>Аудит cайта<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="logo_style" id="logo_style" onclick=remove("logo_style")>Логотип и фирменный стиль<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="design" id="design" onclick=remove("design")>Дизайн<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="structure" id="structure" onclick=remove("structure")>Структура сайта<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="develop" id="develop" onclick=remove("develop")>Верстка и программирование<div class="img"><img src="img/close-pic.png"></div></div>
             </div>
             <a href="#" class="go-btn">Поехали!
               <img src="img/btn-rocket.png" class="go-btn-rocket">
@@ -114,27 +119,27 @@
           <div class="col-sm-7">
             <div class="row">
               <div class="col-md-5">
-                <div id="audit" onclick=add_choice('audit')>Аудит cайта</div>
+                <div class="audit" onclick=add_choice("audit")>Аудит cайта<div class="audit_img img"><img src="img/add-pic.png"></div></div>
                 <p>Мы открываем карты. Вы узнаете слабые моменты своего сайта. Почему ваш бизнес не работал? Где причины неудач и как их устранить.</p>
               </div>
               <div class="col-md-7">
-                <div id="logo_style" onclick=add_choice('logo_style')>Логотип и фирменный стиль</div>
+                <div class="logo_style" onclick=add_choice("logo_style")>Логотип и фирменный стиль<div class="logo_style_img img"><img src="img/add-pic.png"></div></div>
                 <p>Легкий. Современный. Узнаваемый. Его легко запомнить и невозможно забыть. Это секретный ингредиент вашего успеха. Вы затмите конкурентов, потому что работаете не для них, а строго на клиентов</p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-5">
-                <div id="design" onclick=add_choice('design')>Дизайн</div>
+                <div class="design" onclick=add_choice("design")>Дизайн<div class="design_img img"><img src="img/add-pic.png"></div></div>
                 <p>Такого вы еще не видели! Почему? Вашего дизайна еще нет в интернете. Он современный, уникальный, стильный. Это воплощение того, что так долго ищут ваши клиенты. Ваш сайт - вне конкуренции. Его нельзя забыть и невозможно повторить.</p>
               </div>
               <div class="col-md-7">
-                <div id="structure" onclick=add_choice('structure')>Структура сайта</div>
+                <div class="structure" onclick=add_choice("structure")>Структура сайта<div class="structure_img img"><img src="img/add-pic.png"></div></div>
                 <p>Расположение разделов, фон, содержание. Мы создаем скелет. На него надевается одежда, придается индивидуальность, стиль, шарм, очарование. Все это может меняться. Но основа вашего успеха останется нерушимой. Структура – это проект расположения разделов, их наполнение, иллюстрации, форма обратной связи и пр.</p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <div id="develop" onclick=add_choice('develop')>Верстка и программирование</div>
+                <div class="develop" onclick=add_choice("develop")>Верстка и программирование<div class="develop_img img"><img src="img/add-pic.png"></div></div>
                 <p>Технические моменты. Сильнейшие программисты сделают ваш сайт сильным, эффективным. Он работает быстро с любого устройства (телефон, планшет, компьютер). Он надежен и не подвластен внешним воздействиям. Это мощнейший ресурс вашего дела.</p>
               </div>
             </div>
@@ -143,18 +148,18 @@
       </div>
     </section>
     <script>
-      function add_choice(id_elem){
-        var newid = id_elem+'_left';
-        var y = document.getElementById(id_elem);
-        alert(newid);
-        var x = y.cloneNode(true);
-        x.onclick=del_choice(newid);
-        x.id=newid;
-        offerchoice.appendChild(x);
+      function add_choice(elem){
+        document.getElementById(elem).style.display = 'inline-block';
+        var elems = document.getElementsByClassName(elem);
+        for(i=0; i < elems.length; i++) {
+          elems[i].style.boxShadow = 'none';
+        }
+        document.getElementsByClassName(elem+"_img")[0].innerHTML='<img src="img/del-pic.png">';
       }
-      function del_choice(id){
-        var elem = document.getElementById('id');
-        // elem.offerchoice.removeChild(elem);
+      function remove(elem){
+        document.getElementById(elem).style.display = 'none';
+        document.getElementsByClassName(elem)[1].style.boxShadow = '0 4px 0px 0 rgb(85%, 85%, 85%, 0.83)';
+        document.getElementsByClassName(elem+"_img")[0].innerHTML='<img src="img/add-pic.png">';
       }
     </script>
     <script src="js/swiper.min.js"></script>
