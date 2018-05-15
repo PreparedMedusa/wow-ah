@@ -31,7 +31,7 @@
           <div class="col-sm-6 header-right">
             <div class="btn-box">
               <span>+7 (909)</span> 247-99-77
-              <a href="#" class="go-btn top-btn">Поехали!
+              <a href="javascript:PopUpShow()" class="go-btn top-btn">Поехали!
                 <img src="img/btn-rocket.png" class="go-btn-rocket">
               </a>
             </div>
@@ -107,11 +107,11 @@
             <p>Ваши пожелания – фундамент нашей работы. Также мы изучаем покупательскую аудиторию. Формируем дизайн текущего сайта или нового. Мы работаем на ваших клиентов, готовых платить. Дизайн логотипа, названия, фирменный стиль, цветовая гамма сайта – это дорога, ведущая к вашему успеху. В работе учитываются психологические и эмоциональные факторы людей, ищущих вас в сети.</p>
             <div id="offerchoice">
               <h2>Вы выбрали:</h2>
-              <div class="audit" id="audit" onclick=remove("audit")>Аудит cайта<div class="img"><img src="img/close-pic.png"></div></div>
-              <div class="logo_style" id="logo_style" onclick=remove("logo_style")>Логотип и фирменный стиль<div class="img"><img src="img/close-pic.png"></div></div>
-              <div class="design" id="design" onclick=remove("design")>Дизайн<div class="img"><img src="img/close-pic.png"></div></div>
-              <div class="structure" id="structure" onclick=remove("structure")>Структура сайта<div class="img"><img src="img/close-pic.png"></div></div>
-              <div class="develop" id="develop" onclick=remove("develop")>Верстка и программирование<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="audit audit-del" onclick=remove("audit")>Аудит cайта<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="logo_style logo_style-del" onclick=remove("logo_style")>Логотип и фирменный стиль<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="design design-del" onclick=remove("design")>Дизайн<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="structure structure-del" onclick=remove("structure")>Структура сайта<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="develop develop-del" onclick=remove("develop")>Верстка и программирование<div class="img"><img src="img/close-pic.png"></div></div>
             </div>
             <a href="javascript:PopUpShow()" class="go-btn">Поехали!
               <img src="img/btn-rocket.png" class="go-btn-rocket">
@@ -158,24 +158,27 @@
           <h1>Первый шаг к реализации вашего проекта, заполнение формы ниже</h1>
           <p>В течение 15-20 минут с вами свяжется наш менеджер,<br>
             если пройдет больше 20-ти минут вы получаете 10% скидку</p>
-          <div class="popup-input"><p>Имя</p>
-          </div><input type="text" name="name" id="name" placeholder="Введите имя"><br>
-          <div class="popup-input"><p>Телефон</p></div>
-          <input type="tel" name="phone" id="phone" placeholder="+7(___) ___-__-__">
-          <div class="audit" id="audit" onclick=remove("audit")>Аудит cайта<div class="img"><img src="img/close-pic.png"></div></div>
-          <div class="logo_style" id="logo_style" onclick=remove("logo_style")>Логотип и фирменный стиль<div class="img"><img src="img/close-pic.png"></div></div>
-          <div class="design" id="design" onclick=remove("design")>Дизайн<div class="img"><img src="img/close-pic.png"></div></div>
-          <div class="structure" id="structure" onclick=remove("structure")>Структура сайта<div class="img"><img src="img/close-pic.png"></div></div>
-          <div class="develop" id="develop" onclick=remove("develop")>Верстка и программирование<div class="img"><img src="img/close-pic.png"></div></div>
-          <input type="radio" name="user-agreement" value="accepted" required><p>Я согласен с <a href="">Пользовательски соглашением</a></p><Br>
-          <a href="#" class="go-btn">Поехали!
-            <img src="img/btn-rocket.png" class="go-btn-rocket">
-          </a>
+          <form action="">
+            <div class="input-block"><p>Имя</p></div>
+            <input type="text" name="name" id="name" class="popup-input" placeholder="Введите имя" required>
+            <div class="input-block"><p>Телефон</p></div>
+            <input type="tel" name="phone" id="phone" class="popup-input" placeholder="+7(___) ___-__-__" required>
+            <div class="popup-choice">
+              <div class="audit audit-del" onclick=remove("audit")>Аудит cайта<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="logo_style logo_style-del" onclick=remove("logo_style")>Логотип и фирменный стиль<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="design design-del" onclick=remove("design")>Дизайн<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="structure structure-del" onclick=remove("structure")>Структура сайта<div class="img"><img src="img/close-pic.png"></div></div>
+              <div class="develop develop-del" onclick=remove("develop")>Верстка и программирование<div class="img"><img src="img/close-pic.png"></div></div>
+            </div>
+            <div class="license">
+              <input type="checkbox" required><p>Я согласен с <a href="#">Пользовательски соглашением</a></p>
+            </div>
+            <button type="submit" class="go-btn">Поехали!
+              <img src="img/btn-rocket.png" class="go-btn-rocket">
+            </button>
+          </form>
         </div>
       </div>
-    </section>
-    <section class="offer-option">
-
     </section>
     <section class="result">
       <div class="container-fluid">
@@ -186,7 +189,7 @@
             <p>Мы не говорим. Мы действуем. С каждым годом сроки уменьшаются, а качество остается на стабильно
               лидерском уровне. Хотите получить нечто новое? Пишите! Хотите как у Васи, Пети, Гали или Тани? Тогда
               нам не по пути. Мы создаем эксклюзив для вашего успеха и нашей репутации.</p>
-              <a href="#" class="go-btn">Поехали!
+              <a href="javascript:PopUpShow()" class="go-btn">Поехали!
                 <img src="img/btn-rocket.png" class="go-btn-rocket">
               </a>
           </div>
@@ -287,36 +290,23 @@
       </div>
     </footer>
     <script>
-      function add_choice(elem){
-        document.getElementById(elem).style.display = 'inline-block';
-        var elems = document.getElementsByClassName(elem);
-        for(i=0; i < elems.length; i++) {
-          elems[i].style.boxShadow = 'none';
-        }
-        document.getElementsByClassName(elem+"_img")[0].innerHTML='<img src="img/del-pic.png">';
-      }
-      function remove(elem){
-        document.getElementById(elem).style.display = 'none';
-        document.getElementsByClassName(elem)[1].style.boxShadow = '0 4px 0px 0 rgb(85%, 85%, 85%, 0.83)';
-        document.getElementsByClassName(elem+"_img")[0].innerHTML='<img src="img/add-pic.png">';
-      }
-      $(document).ready(function(){
-        PopUpHide();
-      });
+      PopUpHide();
       function PopUpShow(){
           $("#popup1").show();
       }
       function PopUpHide(){
           $("#popup1").hide();
       }
-      // $('html').click(function() {
-      //   var scrollPos = $(window).scrollTop();
-      //   /* Скрыть окно, когда кликаем вне его области */
-      //   // $('[id^=popup-box-]').hide();
-      //   $('#popup1').hide();
-      //   $("html,body").css("overflow","auto");
-      //   $('html').scrollTop(scrollPos);
-      // });
+      function add_choice(elem){
+        $('.'+elem).css({"display":"inline-block","box-shadow":"none","-webkit-box-shadow":"none"});
+        $('.'+elem+'_img').html('<img src="img/del-pic.png">');
+      }
+      function remove(elem){
+        $('.'+elem+'-del').hide();
+        $('.'+elem).css({"box-shadow":"0 4px 0px 0 rgb(85%, 85%, 85%, 0.83)",
+                         "-webkit-box-shadow":"0 4px 0px 0 #dfdfdf"});
+        $('.'+elem+'_img').html('<img src="img/add-pic.png">');
+      }
     </script>
     <script src="js/swiper.min.js"></script>
     <script>
