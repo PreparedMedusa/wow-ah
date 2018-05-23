@@ -551,6 +551,7 @@ footer{
   background-image: url(../img/bg-footer.jpg);
   color: #fff;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .email{
   text-align: right;
@@ -558,11 +559,15 @@ footer{
 footer h2{
   line-height: 32px;
 }
+.footer-cities{
+  text-decoration: underline;
+}
 .phone p{
   margin: 0;
 }
 footer p, footer .phone a{
   color: #676767;
+  margin-bottom: 0;
 }
 /* END FOOTER */
 
@@ -582,7 +587,6 @@ footer p, footer .phone a{
   margin: 150px auto 0px auto;
   width: auto;
   max-width: 578px;
-  min-height: 500px;
   padding: 10px 10px 40px 10px;
   background-color: #fff;
   text-align: center;
@@ -599,21 +603,15 @@ footer p, footer .phone a{
   margin-top: 30px;
 }
 .input-block{
-  display: inline-block;
-  margin-left: 70px;
   margin-top: 25px;
-  width: 60px;
-  height: 42px;
 }
 .input-block p{
   float: right;
   color: #000;
 }
 .popup-input{
-  width: 281px;
+  width: 100%;
   height: 42px;
-  float: right;
-  margin-right: 110px;
   margin-top: 25px;
   padding-left: 23px;
   color: #7c7c7c;

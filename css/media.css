@@ -135,8 +135,10 @@
 		margin-bottom: 40px;
 	}
 	.header-left h3 > span{
-		/* font-size: 18px; */
 		text-shadow: 0 4px 18px rgba(0,0,0,0.5);
+	}
+	header p > span{
+		font-size: 14px;
 	}
 	.logotypes{
 		padding-top: 40px;
@@ -178,9 +180,6 @@
 	h3{
 		font-size: 16px;
 	}
-	p{
-		font-size: 10px;
-	}
 	.logo{
 		margin-top: 20px;
 		font-size: 20px;
@@ -192,9 +191,6 @@
 	}
 	.header-left{
 		padding-right: 0;
-	}
-	header p > span{
-		font-size: 14px;
 	}
 	.logo-icons{
 		margin-bottom: 20px;
@@ -230,12 +226,45 @@
 	.team-foto{
 		margin-top: 30px;
 	}
-	.popup-content h3{
-		margin-top: 45px;
-	}
 }
 @media (max-width: 575px), (max-height: 780px){
 	.popup-content{
-		margin-top: 5%;
+		margin: 1% auto;
+		padding-bottom: 25px;
+	}
+	.close-btn{
+	  position: absolute;
+	  right: 12px;
+	  top: 12px;
+	}
+	.popup-content h3{
+	  margin-top: 35px;
+	}
+	.audit-del, .logo_style-del, .design-del, .structure-del, .develop-del {
+    margin: 3px 6px 3px 6px;
+	}
+	.offer-go-btn{
+		margin-top: 30px;
+	}
+	.popup-choice{
+	  margin-top: 10px;
+	}
+	.input-block, .popup-input{
+	  margin-top: 15px;
+	}
+	.radio-custom{
+		width: 18px;
+		height: 18px;
+	}
+	.radio:checked + .radio-custom::before{
+		top: 2px;
+		right: 2px;
+		bottom: 2px;
+		left: 2px;
+		border-radius: 6px;
+	}
+	.license-text{
+	  margin: 15px 0 15px 10px;
+	  font-size: 10px;
 	}
 }

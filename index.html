@@ -24,7 +24,7 @@
             <div class="btn-box">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3><span>+7 (909)</span><div class="phone">247-99-77</div></h3>
+                  <h3 class="phone"><span>+7 (909)</span>247-99-77</h3>
                 </div>
                 <div class="col-sm-6">
                   <a href="javascript:PopUpShow()" class="go-btn">Поехали!</a>
@@ -437,6 +437,38 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>Wow&Ah!</h2>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="footer-cities">Харьков</h3>
+                <p>ул. Отакара Яроша, 18</p>
+                <div class="phone"><p>+38 (057) 780-66-40</p></div>
+                <p>© Wow&Ah! 2012–2017.</p>
+              </div>
+              <div class="col-md-3">
+                <h3 class="footer-cities">Киев</h3>
+                <p>ул. Вадима Гетьмана, 1Б</p>
+                <div class="phone"><p>+38 (044) 221-66-40</p></div>
+              </div>
+              <div class="col-md-3">
+                <h3 class="footer-cities">Москва</h3>
+                <div class="phone"><p>+7 (499) 404-17-87</p></div>
+              </div>
+              <div class="col-md-3 email">
+                <h3>Email</h3>
+                <p>hello@art-lemon.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <div class="popup" id="popup1">
       <div class="popup-content">
         <a href="javascript:PopUpHide()"><img src="img/close-btn.png" alt="" class="close-btn"></a>
@@ -444,10 +476,20 @@
         <p>В течение 15-20 минут с вами свяжется наш менеджер,<br>
           если пройдет больше 20-ти минут вы получаете 10% скидку</p>
         <form action="#">
-          <div class="input-block"><p>Имя</p></div>
-          <input type="text" name="name" id="name" class="popup-input" placeholder="Введите имя" required><br>
-          <div class="input-block"><p>Телефон</p></div>
-          <input type="tel" name="phone" id="phone" class="popup-input" placeholder="+7(___) ___-__-__" required>
+          <div class="container">
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="col-2"><div class="input-block"><p>Имя</p></div></div>
+              <div class="col-6"><input type="text" name="name" id="name" class="popup-input" placeholder="Введите имя" required></div>
+              <div class="col-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="col-2"><div class="input-block"><p>Телефон</p></div></div>
+              <div class="col-6"><input type="tel" name="phone" id="phone" class="popup-input" placeholder="+7(___) ___-__-__" required></div>
+              <div class="col-2"></div>
+            </div>
+          </div>
           <div class="popup-choice">
             <div class="audit audit-del" onclick="remove('audit')">Аудит cайта<div class="img"><img src="img/close-pic.png" alt=""></div></div>
             <div class="logo_style logo_style-del" onclick="remove('logo_style')">Логотип и фирменный стиль<div class="img"><img src="img/close-pic.png" alt=""></div></div>
@@ -464,38 +506,6 @@
         </form>
       </div>
     </div>
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3">
-            <h2>Wow&Ah!</h2>
-          </div>
-          <div class="col-md-9">
-            <div class="row">
-              <div class="col-md-3">
-                <h3>Харьков</h3>
-                <p>ул. Отакара Яроша, 18</p>
-                  <div class="phone"><p>+38 (057) 780-66-40</p></div>
-                <p>© Wow&Ah! 2012–2017.</p>
-              </div>
-              <div class="col-md-3">
-                <h3>Киев</h3>
-                <p>ул. Вадима Гетьмана, 1Б</p>
-                  <div class="phone"><p>+38 (044) 221-66-40</p></div>
-              </div>
-              <div class="col-md-3">
-                <h3>Москва</h3>
-                <p><div class="phone"><p>+7 (499) 404-17-87</p></div>
-              </div>
-              <div class="col-md-3 email">
-                <h3>Email</h3>
-                <p>hello@art-lemon.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
     <script>
       PopUpHide();
       function PopUpShow(){
